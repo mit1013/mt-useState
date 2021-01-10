@@ -5,11 +5,13 @@ export default function App() {
   const [{ count1, count2 }, setCount] = useState({ count1: 10, count2: 20 });
   console.log("count1", count1);
   console.log("count2", count2);
+  const findTotal = () => count1 + count2;
+
   return (
     <div className="App">
       <div>count1: {count1}</div>
       <div>count2: {count2}</div>
-      <div>total: {count1 + count2}</div>
+      <div>total: {findTotal()}</div>
       <button
         onClick={() =>
           setCount((currentState) => ({
