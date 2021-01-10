@@ -9,6 +9,7 @@ export default function App() {
     <div className="App">
       <div>count1: {count1}</div>
       <div>count2: {count2}</div>
+      <div>total: {count1 + count2}</div>
       <button
         onClick={() =>
           setCount((currentState) => ({
